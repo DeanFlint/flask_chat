@@ -4,9 +4,9 @@
     </head>
     
     <body>
-        <h1><h1>Welcome, {{ username.title() }} </h1>
+        <h1>Welcome, {{ username.title() }} </h1>
         {% for message in chat_messages %}
-        <p>({{ message["timestamp"] }}) {{message["from"].title()}} - {{message["message"]}}</p>
+        <p>{{ message }}</p>
         {% endfor %}
         
         <script>
